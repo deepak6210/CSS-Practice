@@ -1,0 +1,60 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap");
+* {
+  margin: 0px;
+  padding: 0px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+}
+
+.container {
+  margin: 50px 50px;
+}
+
+.container .trapizium {
+  margin: auto;
+  position: relative;
+  height: 64px;
+  background: #a7c0f7;
+  margin-bottom: 5px;
+}
+
+.container .trapizium::before {
+  content: "";
+  width: 100%;
+  position: absolute;
+  left: -20px;
+  z-index: -1;
+  border-left: 20px solid transparent;
+  border-right: 20px solid transparent;
+  border-top: 64px solid #a7c0f7;
+}
+
+.container #stage-2 {
+  margin-right: 20px;
+  margin-left: 20px;
+}
+
+.container #stage-3 {
+  margin-right: 40px;
+  margin-left: 40px;
+}
+
+.container .left {
+  position: absolute;
+  left: 12px;
+  top: calc(50% - 16px);
+  font-size: 16px;
+}
+
+.container .right {
+  position: absolute;
+  right: 12px;
+  top: calc(50% - 18px);
+  font-size: 18px;
+}
+/*# sourceMappingURL=style.css.map */
