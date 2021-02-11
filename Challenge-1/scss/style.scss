@@ -38,12 +38,10 @@ body {
     }
   }
   #stage-2 {
-    margin-right: 20px;
-    margin-left: 20px;
+    max-width: calc(100% - 40px);
   }
   #stage-3 {
-    margin-right: 40px;
-    margin-left: 40px;
+    max-width: calc(100% - 80px);
   }
   .left {
     position: absolute;
