@@ -294,6 +294,7 @@ body {
   }
   .main-container header .conatiner-right {
     width: 100%;
+    text-align: center;
   }
   .main-container header .conatiner-right ul {
     margin-top: 20px;
