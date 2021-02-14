@@ -1,0 +1,47 @@
+// importing font
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap");
+
+// Mixin for lists of skills and interset
+@mixin list {
+  ul {
+    margin-top: 20px;
+  }
+
+  li {
+    display: inline-block;
+    margin-bottom: 10px;
+    margin-left: 3px;
+    padding: 9px;
+    font-size: $fs-small;
+    border-radius: 5px;
+  }
+}
+
+// Variable
+
+// colors
+$p-color: darkgrey;
+$s-color: white;
+$d-color: black;
+
+// font size
+$fs-extra-large: 40px;
+$fs-large: 18px;
+$fs-medium: 16px;
+$fs-small: 12px;
+
+// font weight
+$fw-ligher: 400;
+$fw-dark: 500;
+$fw-darker: 600;
+
+// width
+$r-width: 49%;
+$a-width: 50%;
+$f-width: 100%;
+// css Reset
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}

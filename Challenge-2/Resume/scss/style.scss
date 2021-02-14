@@ -1,0 +1,10 @@
+@import "reset"; 
+
+body {
+  background-color: $p-color;
+  font-family: "Roboto", sans-serif;
+}
+
+@import "main";
+
+@import "media";

@@ -1,0 +1,197 @@
+.main-container {
+  background-color: $s-color;
+  width: 80%;
+  margin: 20px auto 20px auto;
+  position: relative;
+  box-shadow: 3px 3px 5px 6px $s-color;
+  a {
+    text-decoration: none;
+    font-weight: $fw-dark;
+  }
+  header {
+    div {
+      display: inline-block;
+      padding: 25px;
+    }
+    .container-left {
+      width: 39%;
+      h1 {
+        font-size: $fs-extra-large;
+        font-weight: $fw-ligher;
+        font-family: "Ubuntu", sans-serif;
+      }
+      h2 {
+        margin-bottom: 10px;
+        font-size: $fs-large;
+        font-weight: $fw-ligher;
+        color: $p-color;
+        font-family: "Ubuntu", sans-serif;
+      }
+      .key-words {
+        font-weight: $fw-dark;
+      }
+    }
+    .container-mid {
+      padding: 0px;
+      width: 20%;
+      text-align: center;
+      img {
+        height: 128px;
+        width: 128px;
+        border-radius: 50%;
+      }
+    }
+    .conatiner-right {
+      width: 39%;
+      ul {
+        list-style: none;
+      }
+      li {
+        text-align: right;
+        margin-bottom: 15px;
+        font-size: $fs-small;
+        font-weight: $fw-dark;
+      }
+      img {
+        width: 21px;
+        height: 12px;
+        margin-left: 5px;
+      }
+      a{
+          color: $d-color;
+      }
+    }
+  }
+  article {
+    ul {
+      list-style: none;
+    }
+    h2 {
+      border-top: 2px solid $d-color;
+      border-bottom: 2px solid $d-color;
+      display: inline;
+      font-size: 20px;
+    }
+    h4 {
+      font-weight: $fw-dark;
+    }
+    .inline {
+      display: inline-block;
+      padding: 25px;
+      width: $a-width;
+    }
+    #medium {
+      font-size: $fs-large;
+      font-weight: $fw-darker;
+    }
+    #extra-small {
+      font-size: $fs-small;
+      font-style: italic;
+      color: $p-color;
+    }
+    .m-top {
+      margin-top: 20px;
+      font-weight: $fw-dark;
+      font-size: $fs-medium;
+    }
+    .top {
+      margin-top: 50px;
+    }
+    .skills {
+      position: absolute;
+      @include list;
+      li {
+        background-color: $p-color;
+        color: $s-color;
+      }
+    }
+    .education {
+      .university-name {
+        font-weight: $fw-ligher;
+      }
+      .percenatge {
+        margin-top: 5px;
+      }
+      ul {
+        .left {
+          float: left;
+        }
+        .right {
+          float: right;
+        }
+      }
+    }
+    .work-exp {
+      h3 {
+        span {
+          font-weight: $fw-ligher;
+        }
+      }
+      ul {
+        list-style: none;
+        padding-left: 20px;
+        margin-top: 3px;
+        span {
+          font-size: 22px;
+          margin-left: -10px;
+        }
+      }
+      span {
+        color: $d-color;
+      }
+    }
+    .projects {
+      width: $r-width;
+      position: relative;
+      bottom: 190px;
+      ol {
+        font-weight: $fw-dark;
+        padding-left: 15px;
+        ul {
+          font-size: $fs-small;
+          li {
+            list-style: none;
+            span {
+              font-size: 22px;
+              margin-left: -10px;
+            }
+          }
+        }
+      }
+    }
+    .achievments {
+      width: $r-width;
+      position: relative;
+      bottom: 245px;
+    }
+    .interest {
+      width: $r-width;
+      position: relative;
+      bottom: 160px;
+      left: 3px;
+      @include list;
+      li {
+        background-color: $s-color;
+        color: $d-color;
+        border: 2px solid $p-color;
+      }
+    }
+    .language {
+      width: $r-width;
+      position: relative;
+      left: 50%;
+      bottom: 265px;
+      li {
+        display: inline-block;
+        font-size: $fs-small;
+      }
+      .right {
+        float: right;
+      }
+    }
+    .other-initiative {
+      position: relative;
+      bottom: 20px;
+    }
+  }
+}

@@ -1,0 +1,61 @@
+//   Media Query
+@media screen and (max-width: 1000px) {
+  .main-container {
+    width: 95%;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .main-container header .container-left h1 {
+    font-size: 30px;
+  }
+  .main-container article {
+    .language .right {
+      float: unset;
+    }
+    .achievments {
+      bottom: 260px;
+    }
+    .language {
+      bottom: 290px;
+    }
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .main-container article .inline {
+    width: 100%;
+    display: block;
+    position: unset;
+  }
+  .main-container header {
+    .conatiner-right {
+      width: 100%;
+      @include list;
+      li {
+        background-color: $s-color;
+        color: $d-color;
+        border: 2px solid $p-color;
+        cursor: pointer;
+      }
+    }
+      .container-mid {
+        width: 30%;
+      }
+      .container-left {
+        width: 60%;
+      }
+    }
+  }
+
+
+@media screen and (max-width: 400px) {
+  .main-container header {
+    .container-mid {
+      width: 100%;
+    }
+    .container-left {
+        width: 100%;
+      }
+  }
+}
