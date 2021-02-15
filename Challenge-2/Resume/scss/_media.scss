@@ -6,10 +6,10 @@
 }
 
 @media screen and (max-width: 800px) {
-  .main-container header .container-left h1 {
-    font-size: 30px;
-  }
   .main-container article {
+    .container-left h1 {
+      font-size: 30px;
+    }
     .language .right {
       float: unset;
     }
@@ -21,25 +21,23 @@
     }
   }
 }
-
 @media screen and (max-width: 600px) {
-  .main-container article .inline {
-    width: 100%;
-    display: block;
-    position: unset;
-  }
-  .main-container header {
-    .conatiner-right {
+  .main-container article {
+    .inline {
       width: 100%;
-      text-align: center;
-      @include list;
-      li {
-        background-color: $s-color;
-        color: $d-color;
-        border: 2px solid $p-color;
-        cursor: pointer;
-      }
+      position: unset;
     }
+      .conatiner-right {
+        width: 100%;
+        text-align: center;
+        @include list;
+        li {
+          background-color: $s-color;
+          color: $d-color;
+          border: 2px solid $p-color;
+          cursor: pointer;
+        }
+      }
       .container-mid {
         width: 30%;
       }
@@ -56,7 +54,90 @@
       width: 100%;
     }
     .container-left {
-        width: 100%;
-      }
+      width: 100%;
+    }
   }
+}
+
+// Media querry for printer 
+@media print {
+  * {
+    background: transparent !important;
+    color: #000 !important;
+    box-shadow: none !important;
+  }
+  a[href]::after{
+    content: ":-"attr(href)"";
+    color: blue;
+  }
+  .main-container{
+    margin: 0px;
+    overflow: hidden;
+    height: 1040px;
+    width: 100%;
+      img{
+        display: none;
+      }
+      @page{
+        margin: .5cm;
+      }
+  article {
+    .skills li{
+      border: 1px solid $d-color;
+    }
+    .name{
+      position: relative;
+      left: -20px;
+      top: 20px;
+    }
+    .upper{
+      height: 20px;
+    }
+    .inline{
+      padding: 20px;
+    }
+    .top{
+      margin: 20px;
+    }
+    .m-top{
+        margin-top: 15px;
+    }
+    .container-left{
+      width: 40%;
+  }
+    .container-mid{
+      width: 0px;
+    }
+    .conatiner-right{
+      width: 50%;
+    }
+    .language .right {
+      float: unset;
+    }
+    .achievments {
+      position: absolute;
+      bottom: 75px;
+    }
+    .language {
+      bottom: 410px;
+      left: 0%;
+      
+    }
+    .interest{
+      position: relative;
+      left: 50%;
+      bottom: 305px;
+    }
+    .work-exp {
+      position: relative;
+      bottom: 20px;
+    }
+    .projects{
+      bottom: 165px;
+    }
+    .other-initiative{
+      bottom: 200px;
+    }
+  }
+}
 }

@@ -8,11 +8,7 @@
     text-decoration: none;
     font-weight: $fw-dark;
   }
-  header {
-    div {
-      display: inline-block;
-      padding: 25px;
-    }
+  article {
     .container-left {
       width: 39%;
       h1 {
@@ -20,7 +16,7 @@
         font-weight: $fw-ligher;
         font-family: "Ubuntu", sans-serif;
       }
-      h2 {
+      #medium {
         margin-bottom: 10px;
         font-size: $fs-large;
         font-weight: $fw-ligher;
@@ -57,12 +53,10 @@
         height: 12px;
         margin-left: 5px;
       }
-      a{
-          color: $d-color;
+      a {
+        color: $d-color;
       }
     }
-  }
-  article {
     ul {
       list-style: none;
     }
@@ -74,6 +68,10 @@
     }
     h4 {
       font-weight: $fw-dark;
+    }
+    .upper{
+      display: inline-block;
+      padding: 25px;
     }
     .inline {
       display: inline-block;
@@ -143,7 +141,7 @@
     .projects {
       width: $r-width;
       position: relative;
-      bottom: 190px;
+      bottom: 170px;
       ol {
         font-weight: $fw-dark;
         padding-left: 15px;

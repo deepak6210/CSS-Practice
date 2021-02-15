@@ -25,22 +25,17 @@ body {
   font-weight: 500;
 }
 
-.main-container header div {
-  display: inline-block;
-  padding: 25px;
-}
-
-.main-container header .container-left {
+.main-container article .container-left {
   width: 39%;
 }
 
-.main-container header .container-left h1 {
+.main-container article .container-left h1 {
   font-size: 40px;
   font-weight: 400;
   font-family: "Ubuntu", sans-serif;
 }
 
-.main-container header .container-left h2 {
+.main-container article .container-left #medium {
   margin-bottom: 10px;
   font-size: 18px;
   font-weight: 400;
@@ -48,44 +43,44 @@ body {
   font-family: "Ubuntu", sans-serif;
 }
 
-.main-container header .container-left .key-words {
+.main-container article .container-left .key-words {
   font-weight: 500;
 }
 
-.main-container header .container-mid {
+.main-container article .container-mid {
   padding: 0px;
   width: 20%;
   text-align: center;
 }
 
-.main-container header .container-mid img {
+.main-container article .container-mid img {
   height: 128px;
   width: 128px;
   border-radius: 50%;
 }
 
-.main-container header .conatiner-right {
+.main-container article .conatiner-right {
   width: 39%;
 }
 
-.main-container header .conatiner-right ul {
+.main-container article .conatiner-right ul {
   list-style: none;
 }
 
-.main-container header .conatiner-right li {
+.main-container article .conatiner-right li {
   text-align: right;
   margin-bottom: 15px;
   font-size: 12px;
   font-weight: 500;
 }
 
-.main-container header .conatiner-right img {
+.main-container article .conatiner-right img {
   width: 21px;
   height: 12px;
   margin-left: 5px;
 }
 
-.main-container header .conatiner-right a {
+.main-container article .conatiner-right a {
   color: black;
 }
 
@@ -102,6 +97,11 @@ body {
 
 .main-container article h4 {
   font-weight: 500;
+}
+
+.main-container article .upper {
+  display: inline-block;
+  padding: 25px;
 }
 
 .main-container article .inline {
@@ -191,7 +191,7 @@ body {
 .main-container article .projects {
   width: 49%;
   position: relative;
-  bottom: 190px;
+  bottom: 170px;
 }
 
 .main-container article .projects ol {
@@ -272,7 +272,7 @@ body {
 }
 
 @media screen and (max-width: 800px) {
-  .main-container header .container-left h1 {
+  .main-container article .container-left h1 {
     font-size: 30px;
   }
   .main-container article .language .right {
@@ -289,17 +289,16 @@ body {
 @media screen and (max-width: 600px) {
   .main-container article .inline {
     width: 100%;
-    display: block;
     position: unset;
   }
-  .main-container header .conatiner-right {
+  .main-container article .conatiner-right {
     width: 100%;
     text-align: center;
   }
-  .main-container header .conatiner-right ul {
+  .main-container article .conatiner-right ul {
     margin-top: 20px;
   }
-  .main-container header .conatiner-right li {
+  .main-container article .conatiner-right li {
     display: inline-block;
     margin-bottom: 10px;
     margin-left: 3px;
@@ -307,16 +306,16 @@ body {
     font-size: 12px;
     border-radius: 5px;
   }
-  .main-container header .conatiner-right li {
+  .main-container article .conatiner-right li {
     background-color: white;
     color: black;
     border: 2px solid darkgrey;
     cursor: pointer;
   }
-  .main-container header .container-mid {
+  .main-container article .container-mid {
     width: 30%;
   }
-  .main-container header .container-left {
+  .main-container article .container-left {
     width: 60%;
   }
 }
@@ -327,6 +326,88 @@ body {
   }
   .main-container header .container-left {
     width: 100%;
+  }
+}
+
+@media print {
+  * {
+    background: transparent !important;
+    color: #000 !important;
+    -webkit-box-shadow: none !important;
+            box-shadow: none !important;
+  }
+  a[href]::after {
+    content: ":-" attr(href) "";
+    color: blue;
+  }
+  .main-container {
+    margin: 0px;
+    overflow: hidden;
+    height: 1040px;
+    width: 100%;
+  }
+  .main-container img {
+    display: none;
+  }
+  @page {
+    .main-container {
+      margin: .5cm;
+    }
+  }
+  .main-container article .skills li {
+    border: 1px solid black;
+  }
+  .main-container article .name {
+    position: relative;
+    left: -20px;
+    top: 20px;
+  }
+  .main-container article .upper {
+    height: 20px;
+  }
+  .main-container article .inline {
+    padding: 20px;
+  }
+  .main-container article .top {
+    margin: 20px;
+  }
+  .main-container article .m-top {
+    margin-top: 15px;
+  }
+  .main-container article .container-left {
+    width: 40%;
+  }
+  .main-container article .container-mid {
+    width: 0px;
+  }
+  .main-container article .conatiner-right {
+    width: 50%;
+  }
+  .main-container article .language .right {
+    float: unset;
+  }
+  .main-container article .achievments {
+    position: absolute;
+    bottom: 75px;
+  }
+  .main-container article .language {
+    bottom: 410px;
+    left: 0%;
+  }
+  .main-container article .interest {
+    position: relative;
+    left: 50%;
+    bottom: 305px;
+  }
+  .main-container article .work-exp {
+    position: relative;
+    bottom: 20px;
+  }
+  .main-container article .projects {
+    bottom: 165px;
+  }
+  .main-container article .other-initiative {
+    bottom: 200px;
   }
 }
 /*# sourceMappingURL=style.css.map */
