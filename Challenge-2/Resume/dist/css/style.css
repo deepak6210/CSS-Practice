@@ -343,24 +343,14 @@ body {
   .main-container {
     margin: 0px;
     overflow: hidden;
-    height: 1040px;
+    height: 1045px;
     width: 100%;
   }
   .main-container img {
     display: none;
   }
-  @page {
-    .main-container {
-      margin: .5cm;
-    }
-  }
   .main-container article .skills li {
     border: 1px solid black;
-  }
-  .main-container article .name {
-    position: relative;
-    left: -20px;
-    top: 20px;
   }
   .main-container article .upper {
     height: 20px;
@@ -369,7 +359,7 @@ body {
     padding: 20px;
   }
   .main-container article .top {
-    margin: 20px;
+    margin-top: 35px;
   }
   .main-container article .m-top {
     margin-top: 15px;
@@ -407,7 +397,7 @@ body {
     bottom: 165px;
   }
   .main-container article .other-initiative {
-    bottom: 200px;
+    bottom: 190px;
   }
 }
 /*# sourceMappingURL=style.css.map */
