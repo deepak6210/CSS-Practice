@@ -321,10 +321,10 @@ body {
 }
 
 @media screen and (max-width: 400px) {
-  .main-container header .container-mid {
+  .main-container article .container-mid {
     width: 100%;
   }
-  .main-container header .container-left {
+  .main-container article .container-left {
     width: 100%;
   }
 }

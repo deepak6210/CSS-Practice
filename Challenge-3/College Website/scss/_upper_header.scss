@@ -1,0 +1,45 @@
+// for upper header 
+header {
+    .upper-1 {
+      background-color: #1285c6;
+      color: white;
+      padding: 8px 16px;
+      img {
+        width: 15px;
+        height: 15px;
+        color: white;
+      }
+    }
+    .top-left {
+      p {
+        padding-top: 15px;
+      }
+    }
+    .top-mid{
+      max-width: 600px;
+      margin: 1em 100px 1em 0px;
+      overflow: hidden;
+      position: relative;
+      min-height: 2em;
+      font-size: 24px;
+    }
+    .top-bottom{
+        text-align: center;
+    }
+  }
+
+  @media (min-width: 1000px){
+    .inline{
+      display: inline-block;
+    }
+    .top-left {
+      padding-bottom: 20px;
+    }
+     .top-mid{
+     
+    }
+    .top-bottom{
+      float: right;
+      padding: 10px;
+    }
+  } 
