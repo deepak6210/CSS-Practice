@@ -13,29 +13,43 @@ body {
 
 .main-container {
   background-color: white;
-  width: 80%;
-  margin: 20px auto 20px auto;
   position: relative;
+  width: 80%;
+  margin: 20px  auto;
+  padding-bottom: 50px;
   -webkit-box-shadow: 3px 3px 5px 6px white;
           box-shadow: 3px 3px 5px 6px white;
 }
 
-.main-container a {
-  text-decoration: none;
-  font-weight: 500;
-}
-
-.main-container article .container-left {
-  width: 39%;
-}
-
-.main-container article .container-left h1 {
+.main-container .heading-1 {
   font-size: 40px;
-  font-weight: 400;
   font-family: "Ubuntu", sans-serif;
 }
 
-.main-container article .container-left #medium {
+.main-container .heading-2 {
+  border-top: 2px solid black;
+  border-bottom: 2px solid black;
+  display: inline-block;
+  font-size: 20px;
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+
+.main-container .heading-3 {
+  margin-top: 5px;
+}
+
+.main-container .heading-4 {
+  font-weight: 600;
+}
+
+.main-container .upper-left {
+  padding: 25px;
+  display: inline-block;
+  width: 39%;
+}
+
+.main-container .upper-left #medium {
   margin-bottom: 10px;
   font-size: 18px;
   font-weight: 400;
@@ -43,103 +57,142 @@ body {
   font-family: "Ubuntu", sans-serif;
 }
 
-.main-container article .container-left .key-words {
+.main-container .upper-left .key-words {
   font-weight: 500;
 }
 
-.main-container article .container-mid {
-  padding: 0px;
+.main-container .upper-mid {
+  display: inline-block;
+  padding: 25px;
   width: 20%;
   text-align: center;
 }
 
-.main-container article .container-mid img {
+.main-container .upper-mid img {
   height: 128px;
   width: 128px;
   border-radius: 50%;
 }
 
-.main-container article .conatiner-right {
+.main-container .upper-right {
+  position: absolute;
+  display: inline-block;
+  padding: 25px;
   width: 39%;
 }
 
-.main-container article .conatiner-right ul {
+.main-container .upper-right ul {
   list-style: none;
 }
 
-.main-container article .conatiner-right li {
+.main-container .upper-right li {
+  display: block;
   text-align: right;
   margin-bottom: 15px;
   font-size: 12px;
   font-weight: 500;
 }
 
-.main-container article .conatiner-right img {
+.main-container .upper-right img {
   width: 21px;
   height: 12px;
   margin-left: 5px;
 }
 
-.main-container article .conatiner-right a {
+.main-container .upper-right a {
   color: black;
 }
 
-.main-container article ul {
-  list-style: none;
-}
-
-.main-container article h2 {
-  border-top: 2px solid black;
-  border-bottom: 2px solid black;
-  display: inline;
-  font-size: 20px;
-}
-
-.main-container article h4 {
-  font-weight: 500;
-}
-
-.main-container article .upper {
-  display: inline-block;
-  padding: 25px;
-}
-
-.main-container article .inline {
-  display: inline-block;
-  padding: 25px;
-  width: 50%;
-}
-
-.main-container article #medium {
-  font-size: 18px;
-  font-weight: 600;
-}
-
-.main-container article #extra-small {
+.main-container .percenatge {
   font-size: 12px;
   font-style: italic;
   color: darkgrey;
 }
 
-.main-container article .m-top {
-  margin-top: 20px;
-  font-weight: 500;
-  font-size: 16px;
+.main-container .lighter {
+  font-weight: 400;
 }
 
-.main-container article .top {
-  margin-top: 50px;
+.main-container a {
+  text-decoration: none;
 }
 
-.main-container article .skills {
+.main-container .achievement {
+  color: darkgrey;
+  font-size: 12px;
+  font-style: italic;
+  margin: 5px 5px;
+}
+
+.main-container .quote {
+  margin-left: 15px;
+  font-weight: 400;
+  font-size: 14px;
+  margin-bottom: 15px;
+}
+
+.main-container .margin-bottom {
+  margin-bottom: 0px;
+}
+
+.main-container .simple-list {
+  list-style: none;
+  display: inline;
+}
+
+.main-container .simple-list .left {
+  float: left;
+}
+
+.main-container .simple-list .right {
+  float: right;
+}
+
+.main-container .left-container {
+  width: 50%;
+  display: inline-block;
+  padding: 25px;
+}
+
+.main-container .left-container .m-top {
+  margin-top: 15px;
+}
+
+.main-container .left-container .remark {
+  font-size: 14px;
+}
+
+.main-container .right-container {
   position: absolute;
+  width: 50%;
+  display: inline-block;
+  padding: 25px;
 }
 
-.main-container article .skills ul {
+.main-container .languages {
+  list-style: none;
+  display: inline-block;
+  font-size: 16px;
+  font-weight: bold;
+  margin-top: 5px;
+  margin-right: 60px;
+}
+
+.main-container .languages span {
+  font-size: 12px;
+  color: darkgrey;
+  font-weight: 400;
+}
+
+.main-container .right-language {
+  float: right;
+}
+
+.main-container .skills ul {
   margin-top: 20px;
 }
 
-.main-container article .skills li {
+.main-container .skills li {
   display: inline-block;
   margin-bottom: 10px;
   margin-left: 3px;
@@ -148,88 +201,16 @@ body {
   border-radius: 5px;
 }
 
-.main-container article .skills li {
+.main-container .skills li {
   background-color: darkgrey;
   color: white;
 }
 
-.main-container article .education .university-name {
-  font-weight: 400;
-}
-
-.main-container article .education .percenatge {
-  margin-top: 5px;
-}
-
-.main-container article .education ul .left {
-  float: left;
-}
-
-.main-container article .education ul .right {
-  float: right;
-}
-
-.main-container article .work-exp h3 span {
-  font-weight: 400;
-}
-
-.main-container article .work-exp ul {
-  list-style: none;
-  padding-left: 20px;
-  margin-top: 3px;
-}
-
-.main-container article .work-exp ul span {
-  font-size: 22px;
-  margin-left: -10px;
-}
-
-.main-container article .work-exp span {
-  color: black;
-}
-
-.main-container article .projects {
-  width: 49%;
-  position: relative;
-  bottom: 170px;
-}
-
-.main-container article .projects ol {
-  font-weight: 500;
-  padding-left: 15px;
-}
-
-.main-container article .projects ol ul {
-  font-size: 12px;
-}
-
-.main-container article .projects ol ul li {
-  list-style: none;
-}
-
-.main-container article .projects ol ul li span {
-  font-size: 22px;
-  margin-left: -10px;
-}
-
-.main-container article .achievments {
-  width: 49%;
-  position: relative;
-  bottom: 245px;
-}
-
-.main-container article .interest {
-  width: 49%;
-  position: relative;
-  bottom: 160px;
-  left: 3px;
-}
-
-.main-container article .interest ul {
+.main-container .interest ul {
   margin-top: 20px;
 }
 
-.main-container article .interest li {
+.main-container .interest li {
   display: inline-block;
   margin-bottom: 10px;
   margin-left: 3px;
@@ -238,67 +219,71 @@ body {
   border-radius: 5px;
 }
 
-.main-container article .interest li {
+.main-container .interest li {
   background-color: white;
   color: black;
   border: 2px solid darkgrey;
 }
 
-.main-container article .language {
-  width: 49%;
-  position: relative;
-  left: 50%;
-  bottom: 265px;
-}
-
-.main-container article .language li {
-  display: inline-block;
-  font-size: 12px;
-}
-
-.main-container article .language .right {
-  float: right;
-}
-
-.main-container article .other-initiative {
-  position: relative;
-  bottom: 20px;
+@media screen and (max-width: 1200px) {
+  .main-container .languages {
+    margin-right: 0px;
+  }
 }
 
 @media screen and (max-width: 1000px) {
   .main-container {
-    width: 95%;
+    width: 96%;
+    height: -webkit-max-content;
+    height: -moz-max-content;
+    height: max-content;
+  }
+  .main-container .languages {
+    margin-left: 0px;
   }
 }
 
 @media screen and (max-width: 800px) {
-  .main-container article .container-left h1 {
+  .main-container {
+    padding-bottom: 70px;
+    height: -webkit-max-content;
+    height: -moz-max-content;
+    height: max-content;
+  }
+  .main-container .upper-left .heading-1 {
     font-size: 30px;
   }
-  .main-container article .language .right {
-    float: unset;
+  .main-container .m-top {
+    margin-top: 25px;
   }
-  .main-container article .achievments {
-    bottom: 260px;
-  }
-  .main-container article .language {
-    bottom: 290px;
+  .main-container .right-language {
+    float: none;
   }
 }
 
 @media screen and (max-width: 600px) {
-  .main-container article .inline {
-    width: 100%;
-    position: unset;
+  .main-container {
+    padding-bottom: 0px;
   }
-  .main-container article .conatiner-right {
+  .main-container .left-container {
     width: 100%;
+    position: static;
+    padding-bottom: 0px;
+  }
+  .main-container .right-container {
+    width: 100%;
+    position: static;
+    padding-top: 0px;
+  }
+  .main-container .upper-right {
+    width: 100%;
+    position: static;
     text-align: center;
   }
-  .main-container article .conatiner-right ul {
+  .main-container .upper-right ul {
     margin-top: 20px;
   }
-  .main-container article .conatiner-right li {
+  .main-container .upper-right li {
     display: inline-block;
     margin-bottom: 10px;
     margin-left: 3px;
@@ -306,25 +291,25 @@ body {
     font-size: 12px;
     border-radius: 5px;
   }
-  .main-container article .conatiner-right li {
+  .main-container .upper-right li {
     background-color: white;
     color: black;
     border: 2px solid darkgrey;
     cursor: pointer;
   }
-  .main-container article .container-mid {
+  .main-container .upper-mid {
     width: 30%;
   }
-  .main-container article .container-left {
+  .main-container .upper-left {
     width: 60%;
   }
 }
 
 @media screen and (max-width: 400px) {
-  .main-container article .container-mid {
+  .main-container .upper-mid {
     width: 100%;
   }
-  .main-container article .container-left {
+  .main-container .upper-left {
     width: 100%;
   }
 }
@@ -342,62 +327,48 @@ body {
   }
   .main-container {
     margin: 0px;
+    padding: 0px;
     overflow: hidden;
-    height: 1045px;
     width: 100%;
+    height: 1035px;
+  }
+  .main-container .heading-2 {
+    margin-top: 10px;
+    margin-bottom: 10px;
   }
   .main-container img {
     display: none;
   }
-  .main-container article .skills li {
+  .main-container .right-container {
+    position: absolute;
+    top: 155px;
+    left: 50%;
+  }
+  .main-container .left-container {
+    position: relative;
+    bottom: 900px;
+  }
+  .main-container .languages {
+    margin-right: 0px;
+    float: none;
+  }
+  .main-container .skills li {
     border: 1px solid black;
   }
-  .main-container article .upper {
-    height: 20px;
-  }
-  .main-container article .inline {
-    padding: 20px;
-  }
-  .main-container article .top {
-    margin-top: 35px;
-  }
-  .main-container article .m-top {
-    margin-top: 15px;
-  }
-  .main-container article .container-left {
+  .main-container .upper-left {
     width: 40%;
   }
-  .main-container article .container-mid {
+  .main-container .upper-mid {
     width: 0px;
   }
-  .main-container article .conatiner-right {
+  .main-container .upper-right {
     width: 50%;
   }
-  .main-container article .language .right {
-    float: unset;
+  .main-container .language .right {
+    float: none;
   }
-  .main-container article .achievments {
-    position: absolute;
-    bottom: 75px;
-  }
-  .main-container article .language {
-    bottom: 410px;
-    left: 0%;
-  }
-  .main-container article .interest {
-    position: relative;
-    left: 50%;
-    bottom: 305px;
-  }
-  .main-container article .work-exp {
-    position: relative;
-    bottom: 20px;
-  }
-  .main-container article .projects {
-    bottom: 165px;
-  }
-  .main-container article .other-initiative {
-    bottom: 190px;
+  .main-container .quote {
+    margin-bottom: 5px;
   }
 }
 /*# sourceMappingURL=style.css.map */

@@ -1,34 +1,51 @@
 //   Media Query
-@media screen and (max-width: 1000px) {
-  .main-container {
-    width: 95%;
+@media screen and (max-width: 1200px){
+  
+  .main-container .languages{
+    margin-right: 0px;
   }
 }
 
+@media screen and (max-width: 1000px){
+  .main-container{
+    width: 96%;
+    height: max-content;
+    .languages{
+      margin-left: 0px;
+    }
+  }
+}
 @media screen and (max-width: 800px) {
-  .main-container article {
-    .container-left h1 {
-      font-size: 30px;
-    }
-    .language .right {
-      float: unset;
-    }
-    .achievments {
-      bottom: 260px;
-    }
-    .language {
-      bottom: 290px;
+  .main-container {
+    padding-bottom: 70px;
+    height: max-content;
+   .upper-left .heading-1{
+     font-size: 30px;
+   }
+   .m-top{
+    margin-top: 25px;
+  }
+    .right-language {
+      float: none;
     }
   }
 }
 @media screen and (max-width: 600px) {
-  .main-container article {
-    .inline {
+  .main-container {
+    padding-bottom: 0px;
+    .left-container {
       width: 100%;
-      position: unset;
+      position: static;
+      padding-bottom: 0px;
     }
-    .conatiner-right {
+    .right-container {
       width: 100%;
+      position: static;
+      padding-top: 0px;
+    }
+    .upper-right {
+      width: 100%;
+     position: static;
       text-align: center;
       @include list;
       li {
@@ -38,21 +55,21 @@
         cursor: pointer;
       }
     }
-    .container-mid {
+    .upper-mid {
       width: 30%;
     }
-    .container-left {
+    .upper-left {
       width: 60%;
     }
   }
 }
 
 @media screen and (max-width: 400px) {
-  .main-container article {
-    .container-mid {
+  .main-container {
+    .upper-mid {
       width: 100%;
     }
-    .container-left {
+    .upper-left {
       width: 100%;
     }
   }
@@ -71,63 +88,49 @@
   }
   .main-container {
     margin: 0px;
+    padding: 0px;
     overflow: hidden;
-    height: 1045px;
     width: 100%;
+    height: 1035px;
+    .heading-2{
+      margin-top: 10px;
+      margin-bottom: 10px;
+    }
     img {
       display: none;
+    }  
+    .right-container{
+      position: absolute;
+      top: 155px;
+      left: 50%;
     }
-    article {
+    .left-container{
+      position: relative;
+      bottom: 900px;
+    }
+   .languages{
+      margin-right: 0px;
+      float: none;
+    }
       .skills li {
         border: 1px solid $d-color;
       }
-      .upper {
-        height: 20px;
-      }
-      .inline {
-        padding: 20px;
-      }
-      .top {
-        margin-top: 35px;
-      }
-      .m-top {
-        margin-top: 15px;
-      }
-      .container-left {
+      .upper-left {
         width: 40%;
       }
-      .container-mid {
+      .upper-mid {
         width: 0px;
       }
-      .conatiner-right {
+      .upper-right {
         width: 50%;
       }
       .language .right {
-        float: unset;
+        float: none;
       }
-      .achievments {
-        position: absolute;
-        bottom: 75px;
+      .quote{
+        margin-bottom: 5px;
       }
-      .language {
-        bottom: 410px;
-        left: 0%;
-      }
-      .interest {
-        position: relative;
-        left: 50%;
-        bottom: 305px;
-      }
-      .work-exp {
-        position: relative;
-        bottom: 20px;
-      }
-      .projects {
-        bottom: 165px;
-      }
-      .other-initiative {
-        bottom: 190px;
-      }
+
     }
   }
-}
+
