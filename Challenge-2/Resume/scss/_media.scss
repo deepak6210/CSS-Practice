@@ -1,16 +1,15 @@
 //   Media Query
-@media screen and (max-width: 1200px){
-  
-  .main-container .languages{
+@media screen and (max-width: 1200px) {
+  .main-container .right-container .languages {
     margin-right: 0px;
   }
 }
 
-@media screen and (max-width: 1000px){
-  .main-container{
+@media screen and (max-width: 1000px) {
+  .main-container {
     width: 96%;
     height: max-content;
-    .languages{
+    .languages {
       margin-left: 0px;
     }
   }
@@ -19,12 +18,15 @@
   .main-container {
     padding-bottom: 70px;
     height: max-content;
-   .upper-left .heading-1{
-     font-size: 30px;
-   }
-   .m-top{
-    margin-top: 25px;
-  }
+    .right-container .languages{
+     float: none;
+    }
+    .upper-left .heading-1 {
+      font-size: 30px;
+    }
+    .m-top {
+      margin-top: 25px;
+    }
     .right-language {
       float: none;
     }
@@ -45,7 +47,7 @@
     }
     .upper-right {
       width: 100%;
-     position: static;
+      position: static;
       text-align: center;
       @include list;
       li {
@@ -92,45 +94,43 @@
     overflow: hidden;
     width: 100%;
     height: 1035px;
-    .heading-2{
+    .heading-2 {
       margin-top: 10px;
       margin-bottom: 10px;
     }
     img {
       display: none;
-    }  
-    .right-container{
+    }
+    .right-container {
       position: absolute;
       top: 155px;
       left: 50%;
     }
-    .left-container{
+    .left-container {
       position: relative;
       bottom: 900px;
     }
-   .languages{
+    .languages {
       margin-right: 0px;
       float: none;
     }
-      .skills li {
-        border: 1px solid $d-color;
-      }
-      .upper-left {
-        width: 40%;
-      }
-      .upper-mid {
-        width: 0px;
-      }
-      .upper-right {
-        width: 50%;
-      }
-      .language .right {
-        float: none;
-      }
-      .quote{
-        margin-bottom: 5px;
-      }
-
+    .skills li {
+      border: 1px solid $d-color;
+    }
+    .upper-left {
+      width: 40%;
+    }
+    .upper-mid {
+      width: 0px;
+    }
+    .upper-right {
+      width: 50%;
+    }
+    .language .right {
+      float: none;
+    }
+    .quote {
+      margin-bottom: 5px;
     }
   }
-
+}

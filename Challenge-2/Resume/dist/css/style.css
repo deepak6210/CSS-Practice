@@ -15,7 +15,7 @@ body {
   background-color: white;
   position: relative;
   width: 80%;
-  margin: 20px  auto;
+  margin: 20px auto;
   padding-bottom: 50px;
   -webkit-box-shadow: 3px 3px 5px 6px white;
           box-shadow: 3px 3px 5px 6px white;
@@ -46,7 +46,7 @@ body {
 .main-container .upper-left {
   padding: 25px;
   display: inline-block;
-  width: 39%;
+  width: 40%;
 }
 
 .main-container .upper-left #medium {
@@ -78,7 +78,7 @@ body {
   position: absolute;
   display: inline-block;
   padding: 25px;
-  width: 39%;
+  width: 40%;
 }
 
 .main-container .upper-right ul {
@@ -131,10 +131,6 @@ body {
   margin-bottom: 15px;
 }
 
-.main-container .margin-bottom {
-  margin-bottom: 0px;
-}
-
 .main-container .simple-list {
   list-style: none;
   display: inline;
@@ -169,30 +165,30 @@ body {
   padding: 25px;
 }
 
-.main-container .languages {
+.main-container .right-container .languages {
   list-style: none;
   display: inline-block;
   font-size: 16px;
-  font-weight: bold;
+  font-weight: 600;
   margin-top: 5px;
   margin-right: 60px;
 }
 
-.main-container .languages span {
+.main-container .right-container .languages span {
   font-size: 12px;
   color: darkgrey;
   font-weight: 400;
 }
 
-.main-container .right-language {
+.main-container .right-container .right-language {
   float: right;
 }
 
-.main-container .skills ul {
+.main-container .right-container .skills ul {
   margin-top: 20px;
 }
 
-.main-container .skills li {
+.main-container .right-container .skills li {
   display: inline-block;
   margin-bottom: 10px;
   margin-left: 3px;
@@ -201,16 +197,16 @@ body {
   border-radius: 5px;
 }
 
-.main-container .skills li {
+.main-container .right-container .skills li {
   background-color: darkgrey;
   color: white;
 }
 
-.main-container .interest ul {
+.main-container .right-container .interest ul {
   margin-top: 20px;
 }
 
-.main-container .interest li {
+.main-container .right-container .interest li {
   display: inline-block;
   margin-bottom: 10px;
   margin-left: 3px;
@@ -219,14 +215,14 @@ body {
   border-radius: 5px;
 }
 
-.main-container .interest li {
+.main-container .right-container .interest li {
   background-color: white;
   color: black;
   border: 2px solid darkgrey;
 }
 
 @media screen and (max-width: 1200px) {
-  .main-container .languages {
+  .main-container .right-container .languages {
     margin-right: 0px;
   }
 }
@@ -249,6 +245,9 @@ body {
     height: -webkit-max-content;
     height: -moz-max-content;
     height: max-content;
+  }
+  .main-container .right-container .languages {
+    float: none;
   }
   .main-container .upper-left .heading-1 {
     font-size: 30px;
