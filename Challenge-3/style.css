@@ -1,0 +1,61 @@
+ 
+  .logo {
+    font-family: "Playfair Display", sans-serif;
+    font-size: 2.25rem;
+  }
+  
+  .logo:hover {
+    text-decoration: none;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    font-family: "Playfair Display", sans-serif;
+  }
+  
+  .display-4 {
+    font-size: 2.5rem;
+  }
+  @media (min-width: 768px) {
+    .display-4 {
+      font-size: 3rem;
+    }
+  }
+  
+  .scroller {
+    height: 2.75rem;
+    overflow-y: hidden;
+  }
+  .scroller .nav {
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    text-align: center;
+    white-space: nowrap;
+  }
+  
+  .scroller .nav-link {
+    padding-top: .75rem;
+    padding-bottom: .75rem;
+    font-size: .875rem;
+  }
+  
+  .card-img-right {
+    height: 100%;
+    border-radius: 0 3px 3px 0;
+  }
+  
+  .flex-auto {
+    flex: 0 0 auto;
+  }
+  
+  .h-250 { height: 250px; }
+  @media (min-width: 768px) {
+    .h-md-250 { height: 250px; }
+  }
+  
+  /* Pagination */
+  .blog-pagination {
+    margin-bottom: 4rem;
+  }
+  .blog-pagination > .btn {
+    border-radius: 2rem;
+  }
